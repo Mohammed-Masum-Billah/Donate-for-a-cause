@@ -8,3 +8,8 @@ function getInputValueById(id){
     const donateNumber=parseFloat(inputDonate);
     return donateNumber;
 }
+
+function getTextById(id){
+    const text_values=document.getElementById(id).innerText;
+    return text_values;
+}
