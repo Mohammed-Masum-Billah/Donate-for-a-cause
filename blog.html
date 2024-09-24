@@ -32,25 +32,57 @@
     <main>
         <div class="collapse bg-white-200">
             <input type="radio" name="my-accordion-1" checked="checked" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
             <div class="collapse-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse quasi quibusdam aliquid temporibus vitae reiciendis, labore eaque quas ullam dolore architecto rem praesentium aut at enim recusandae voluptatibus minus?</p>
+                <p>The DOM is a W3C (World Wide Web Consortium) standard.
+                    <br>
+                    The DOM defines a standard for accessing documents:
+                    <br>
+                    <b>"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document." </b></p>
             </div>
           </div>
           <div class="collapse bg-base-200">
             <input type="radio" name="my-accordion-1" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
             <div class="collapse-content">
-                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xl" />
+                <p>Often, with JavaScript, you want to manipulate HTML elements.
+                    <br>
+                    To do so, you have to find the elements first. There are several ways to do this:
+                    <ul class="steps steps-vertical">
+                        <li class="step">Finding HTML elements by id</li>
+                        <li class="step">Finding HTML elements by tag name</li>
+                        <li class="step">Finding HTML elements by class name</li>
+                        <li class="step">Finding HTML elements by CSS selectors</li>
+                        <li class="step">Finding HTML elements by HTML object collections</li>
+                      </ul>
+                    </p>
             </div>
           </div>
           <div class="collapse bg-base-200">
             <input type="radio" name="my-accordion-1" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
             <div class="collapse-content">
-                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xl" />
+                <p>
+                    Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.
+                    <br>
+                    <b>Efficiency:</b> Event delegation reduces the number of event listeners, improving memory usage and performance, especially when dealing with a large number of elements. <br>
+                    <b>Dynamic elements:</b> It works seamlessly with dynamically added or removed child elements, as the common ancestor continues to listen for events on them.
+                </p>
             </div>
           </div>
+          <div class="collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+                <p>
+                    The classList object only provide methods to change the class of an element. If you want to change other attributes like id, href, or src, you can use the setAttribute() method.
+                    <br>
+                    The setAttribute() method accepts two arguments:
+                    <br>
+                    1. The name of the attribute to set <br>
+                    2.The value of the attribute to set
+                </p>
+            </div>
     </main>
 </body>
 </html>
