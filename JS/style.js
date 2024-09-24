@@ -5,9 +5,10 @@ document.getElementById('btn-noakhali').addEventListener('click',function(){
     const accountBalance=getInputValueById('account-balance');
     const noaKhaliCollection=getInputValueById('noakhali-col');
 
-    if (floodNoakhali>accountBalance) {
+    if (floodNoakhali<accountBalance) {
         const newAccBal= accountBalance-floodNoakhali;
         document.getElementById('account-balance').innerText= newAccBal;
+
         div.classList.add('my-2');
         div.classList.add('border-2');
         div.classList.add('border-solid');
