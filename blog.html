@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white">
+<body class="max-w-screen-xl mx-auto bg-white">
     <header>
         <div class="navbar bg-red-50 pt-4">
             <div class="navbar-start">
@@ -25,9 +25,32 @@
             </div>
         </div>
         <div class="text-center pt-8">
-            <a class="btn">Donation</a>
-            <a class="btn " href="history.hlml">History</a>
+            <a class="btn" href="index.html">Donation</a>
+            <a class="btn" href="history.hlml">History</a>
         </div>
     </header>
+    <main>
+        <div class="collapse bg-white-200">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xl" />
+            </div>
+          </div>
+          <div class="collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xl" />
+            </div>
+          </div>
+          <div class="collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xl" />
+            </div>
+          </div>
+    </main>
 </body>
 </html>

@@ -9,37 +9,37 @@
 </head>
 <body class="max-w-screen-xl mx-auto">
     <header>
-        <div class="navbar h-3 bg-red-50 pt-4">
-            <div class="navbar-start">
-                <a class="btn btn-ghost text-xl " href="blog.html">blog</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-            <img src="assets/logo.png" alt="logo">
-                <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
-            </div>
-            <div class="navbar-end">
-                <div class="flex">
-                    <img src="assets/coin.png" alt="">
-                    <h4 id="acct-balance">10000 BDT</h4>
-                </div>
-            </div>
-        </div>
+        <body class="max-w-screen-xl mx-auto">
+            <header>
+                <div class="navbar h-3 bg-red-50">
+                    <div class="navbar-start">
+                      <a class="btn btn-ghost text-xl" href="blog.html">Blog</a>
+                    </div>
+                    <div class="navbar-center">
+                      <img src="assets/logo.png" alt="">
+                      <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="flex">
+                            <img src="assets/coin.png" alt="">
+                            <h4 ><span id="account-balance">1000</span>BDT</h4>
+                        </div>
+                    </div>
+                  </div>
         <div class="text-center pt-8">
-            <a class="btn btn-ghost text-xl" href="index.html">Donation</a>
-            <a class="btn btn-ghost text-xl" href="history.html">History</a>
+            <button id="donate-btn" class="btn btn-neutral"> Donation</button>
+            <button id="history-btn" class="btn btn-neutral "> History</button>
         </div>
     </header>
-    <Section>
+    <Section id="donate-frm">
         <div class="card card-side bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="assets/noakhali.png"
-                alt="Movie" />
+              <img src="assets/noakhali.png" alt="flood">
             </figure>
             <div class="card-body">
                 <div class="flex">
-                    <img src="assets/coin.png" alt="coin">
-                    <h4 id="donate-money">100 BDT</h4>
+                    <img src="assets/coin.png"  class="max-w-md rounded-lg shadow-3xl" alt="coin">
+                    <h4><span id="noakhali-col">100</span> BDT</h4>
                 </div>
               <h2 class="card-title">Noakhali still reeling from flood</h2>
               <p>Sixty-year-old Kofil Uddin watched helplessly as floodwater crept into his home at Bhabani Jibanpur village in Noakhali's Begumganj upazila on August 10. More than a month has passed, but the house is still under knee-deep water.As long as the educational institutions have been turned into flood shelters, the authorities are unable to resume academic activities and they have requested the local administration to move the people to other places.</p>
@@ -49,10 +49,17 @@
               </div>
             </div>
           </div>
+
+          <div id="history-frm" class="hidden"></div>
     </Section>
     <footer>
         
     </footer>
-    <script src="JS/design.js"></script>
+    
+    <script src="JS/style.js"></script>
+    
+    <script src="JS/Shared.js"></script>
+    <script src="JS/features.js"></script>
+    
 </body>
 </html>
