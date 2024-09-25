@@ -52,13 +52,13 @@ document.getElementById('btn-feni').addEventListener('click',function () {
         const totalCollection=floodFeni+feniCollection;
         document.getElementById('feni-col').innerText=totalCollection;
 
-        const donateText=getTextById('feni-title');
+        const donateTexts=getTextById('feni-title');
         const div=document.createElement('div');
         div.classList.add('py-2');
         div.classList.add('border-2')
         div.classList.add('boder-solid')
         div.classList.add('p-4')
-        div.innerHTML=`<h4> ${floodFeni} Taka donated for ${donateText} </h4>
+        div.innerHTML=`<h4> ${floodFeni} Taka donated for ${donateTexts} </h4>
         <p> Date: ${new Date().toString()} </p>`
 
         document.getElementById('history-trans').appendChild(div);
@@ -76,7 +76,7 @@ document.getElementById('btn-feni').addEventListener('click',function () {
 document.getElementById('btn-quota').addEventListener('click',function () {
     const quotaMovement=getInputValueById('protest-quota');
     const accountBalance=getTextValueById('account-balance');
-    const quotaCollection=getTextValueById('ququota-protest-col');
+    const quotaCollection=getTextValueById('quota-protest-col');
 
     if (isNaN(quotaMovement)) {
         alert('Please enter amounts only.');
@@ -90,13 +90,13 @@ document.getElementById('btn-quota').addEventListener('click',function () {
         const quotaAid=quotaMovement+quotaCollection;
         document.getElementById('quota-protest-col').innerText=quotaAid;
 
-        const donateText=getTextById('quota-aidititle');
+        const donateTextes=getTextById('quota-aidititle');
         const div= document.createElement('div');
         div.classList.add('py-2');
         div.classList.add('border-2');
         div.classList.add('border-solid');
         div.classList.add('p-4');
-        div.innerHTML=`<h4> ${quotaMovement} Taka donated for ${donateText} </h4>
+        div.innerHTML=`<h4> ${quotaMovement} Taka donated for ${donateTextes} </h4>
         <p> Date: ${new Date().toString()} </p>`
 
         document.getElementById('history-trans').appendChild(div);
