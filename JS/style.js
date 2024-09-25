@@ -3,19 +3,26 @@ document.getElementById('btn-noakhali').addEventListener('click',function(){
 
     const floodNoakhali=getInputValueById('flood-noakhali');
     const accountBalance=getTextValueById('account-balance');
-    const noaKhaliCollection=getTextValueById('noakhali-col');    
+    const noaKhaliCollection=getTextValueById('noakhali-col');  
+    if(isNaN(donateAmount)){
+        alert('Please Enter valid number')
+        return;  
 
+    }
     if (floodNoakhali<accountBalance) {
         const newAccBal= accountBalance-floodNoakhali;
         document.getElementById('account-balance').innerText= newAccBal;
 
-    //     div.classList.add('my-2');
-    //     div.classList.add('border-2');
-    //     div.classList.add('border-solid');
-    //     div.classList.add('p-4');
-    //     div.innerHTML=`<h4> ${donateAmount} Taka has been donated </h4><p> Date: ${new Date().toString()} </p>`
-    
-    // document.getElementById('history-trans').appendChild(div);
+        // div.classList.add('my-2');
+        // div.classList.add('border-2');
+        // div.classList.add('border-solid');
+        // div.classList.add('p-4');
+        // div.innerHTML=`
+        // <h4> ${donateAmount} Taka is donated for ${donateText} </h4>
+        // <p> Date: ${new Date().toString()} </p>
+        // `
+        
+        // document.getElementById('history_trans').appendChild(div);
     } 
     else {
         alert('Please try again.')
@@ -33,8 +40,12 @@ document.getElementById('btn-feni').addEventListener('click',function(){
 
     const floodFeni=getInputValueById('flood-feni');
     const accountBalance=getTextValueById('account-balance');
-    const feniCollection=getTextValueById('feni-col');    
+    const feniCollection=getTextValueById('feni-col');   
+    if(isNaN(donateAmount)){
+        alert('Please Enter valid number')
+        return; 
 
+    }
     if (floodFeni<accountBalance) {
         const newAccBal= accountBalance-floodFeni;
         document.getElementById('account-balance').innerText= newAccBal;
@@ -43,9 +54,12 @@ document.getElementById('btn-feni').addEventListener('click',function(){
     //     div.classList.add('border-2');
     //     div.classList.add('border-solid');
     //     div.classList.add('p-4');
-    //     div.innerHTML=`<h4> ${donateAmount} Taka has been donated </h4><p> Date: ${new Date().toString()} </p>`
-    
-    // document.getElementById('history-trans').appendChild(div);
+    //     div.innerHTML=`
+    //     <h4> ${donateAmount} Taka is donated for ${donateText} </h4>
+    //     <p> Date: ${new Date().toString()} </p>
+    //     `
+        
+    //     document.getElementById('history_trans').appendChild(div);
     } 
     else {
         alert('Please try again.')
@@ -63,19 +77,26 @@ document.getElementById('btn-quota').addEventListener('click',function(){
 
     const quotaMovement=getInputValueById('protest-quota');
     const accountBalance=getTextValueById('account-balance');
-    const quotaMovementCollection=getTextValueById('quota-protest-col');    
+    const quotaMovementCollection=getTextValueById('quota-protest-col');   
+    if(isNaN(donateAmount)){
+        alert('Please Enter valid number')
+        return;
+    } 
 
     if (quotaMovement<accountBalance) {
         const newAccBal= accountBalance-quotaMovement;
         document.getElementById('account-balance').innerText= newAccBal;
 
-    //     div.classList.add('my-2');
-    //     div.classList.add('border-2');
-    //     div.classList.add('border-solid');
-    //     div.classList.add('p-4');
-    //     div.innerHTML=`<h4> ${donateAmount} Taka has been donated </h4><p> Date: ${new Date().toString()} </p>`
+    // div.classList.add('my-2');
+    // div.classList.add('border-2');
+    // div.classList.add('border-solid');
+    // div.classList.add('p-4');
+    // div.innerHTML=`
+    // <h4> ${donateAmount} Taka is donated for ${donateText} </h4>
+    // <p> Date: ${new Date().toString()} </p>
+    // `
     
-    // document.getElementById('history-trans').appendChild(div);
+    // document.getElementById('history_trans').appendChild(div);
     } 
     else {
         alert('Please try again.')
