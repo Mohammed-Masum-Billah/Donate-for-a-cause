@@ -4,14 +4,30 @@ document.getElementById('btn-noakhali').addEventListener('click',function(){
     const floodNoakhali=getInputValueById('flood-noakhali');
     const accountBalance=getTextValueById('account-balance');
     const noaKhaliCollection=getTextValueById('noakhali-col');  
-    if(isNaN(donateAmount)){
-        alert('Please Enter valid number')
-        return;  
 
+    if (isNaN(floodNoakhali)) {
+        alert('Please enter numbers only')
+        return;
     }
+
+    // // if(isNaN(donateAmount)){
+    // //     alert('Please Enter valid number')
+    // //     return;  
+
+    // }
+
     if (floodNoakhali<accountBalance) {
         const newAccBal= accountBalance-floodNoakhali;
         document.getElementById('account-balance').innerText= newAccBal;
+
+        div.classList.add('my-2');
+        div.classList.add('border-2');
+        div.classList.add('border-solid');
+        div.classList.add('p-4');
+        div.innerHTML=`<h4> ${donateAmount} Takais donatedfor ${donateText} </h4>
+        <p> Date: ${new Date().toString()} </p>`
+
+        document.getElementById('history-trans').appendChild(div);
 
         // div.classList.add('my-2');
         // div.classList.add('border-2');

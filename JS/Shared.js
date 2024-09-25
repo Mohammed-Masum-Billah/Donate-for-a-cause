@@ -9,7 +9,7 @@ function getInputValueById(id){
     return donateNumber;
 }
 
-function getTextById(id){
+function getTextById(id) {
     const text_values=document.getElementById(id).innerText;
     return text_values;
 }
